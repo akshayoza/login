@@ -1,0 +1,203 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body
+{
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: url(wallpaperflare.com_wallpaper.jpg)no-repeat;  
+    background-size: cover;  
+    background-position: center;  
+}
+header
+{
+    position: fixed;
+    top: 0; /*  web page na top thi dis 0 cm*/
+    left: -50px;
+    /*  web page na left thi dis 0 cm*/
+    width: 100%;
+    padding: 20px 100px;
+    /*background-color: hsl(252,75%,60%);*/
+    display: flex;
+    justify-content: space-between;/*  space between logo and nav tag*/
+    align-items: center;  /*all item in one line */
+    z-index: 99; 
+} 
+.logo  
+{
+    font-size: 2em;  
+    color: black;
+    user-select: none;
+    
+}
+
+.wrapper
+{
+     
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);/*blur behind the login box*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /*hide the content outoff bound*/
+    /* transform: scale(0);/*hide the box*/
+    /* transition: height .2s ease;change the box heigth when chage ragister */
+    /* transition: transform .5s ease;showing login box in 5 sec */ 
+}   
+
+
+.wrapper .form-box /*manage in box to all things like input button etc..*/
+{
+    width: 100%;
+    padding:40px;
+
+}
+
+/* .wrapper .icon-close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #162938;
+    font-size: 2em;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+} */
+
+
+.form-box h2
+{
+    text-decoration: underline;
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+
+    margin: 30px 0;
+}
+
+/* .input-box label
+{
+ position: absolute;
+ top: 50%;
+ left: 5px;
+ transform: translateY(-50%);   
+ font-size: 1em;
+ color: #162938;
+ font-weight: 500;
+ pointer-events: none;
+transition: 0.5s; /*email and password up down time }
+*/
+
+.input-box input::placeholder
+{
+    color: black;
+    font-weight: lighter;
+    
+}
+
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(201, 193, 214);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+/* 
+.input-box .icon
+{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px; /*icon heigth botton line
+} */
+.remember-forgot
+{
+    font-size: .9em;
+    color: white;
+    font-weight: 500;
+    margin: 10px 0px 15px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot a
+{
+    color: red;
+    text-decoration: none;
+    margin-right: 0px;  
+
+    /* transition: transform 10s;under line will be come after .5 sec */
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+    /* transform: scalex(1); */
+}
+
+.login-register
+{
+    margin: -10px 5px 15px;
+    color: white;
+    font-size: .9em;
+}
+.login-register a{
+    color: red;
+}
+.login-register a:hover
+{
+    text-decoration: underline;
+    /* transform: scalex(1); */
+}
+.btn
+{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
